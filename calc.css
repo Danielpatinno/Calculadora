@@ -56,37 +56,6 @@ body {
     cursor: pointer;
   }
 
-/* #previousOperation{
-    color: #777;
-    padding: .2em;
-    /* Overflow-wrap já deixa um espeço previsto para o texto, não deixa vazar para fora */
-    /* overflow-wrap: break-word;
-    min-height: 1.6em;
-}
-
-#currentOperation {
-    min-height: 1.6em;
-    font-size: 3em;
-    font-weight: 700;
-    padding: 0.2em;
-    overflow-wrap: break-word;
-}
-
-#buttonsContainer {
-    display: inline-block;
-} */ 
-/* 
-#buttonsContainer button {
-    background-color: rgb(57, 55, 55);
-    color: white;
-    width: 92px;
-    height: 4em;
-    font-size: 1.2em;
-    padding: 0.5em;
-    cursor: pointer;
-    border: .5px solid rgba(0, 0, 0, 0.283);
-} */
-
 #buttonsContainer button:hover {
     background-color: rgb(74, 69, 69) !important;   
 }
@@ -99,11 +68,6 @@ button.btnNumber {
 #buttonsContainer button.btnNumber:hover {
     background-color: rgb(57, 55, 55) !important;  
 }
-
-/* button#btnIgual {
-    width: 188px;
-    background-color: rgba(171, 168, 167, 0.603);
-} */
 
 #buttonsContainer #btnIgual {
     grid-column: span 2;
