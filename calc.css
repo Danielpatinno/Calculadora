@@ -33,11 +33,34 @@ body {
     text-align: right;
 }
 
-#previousOperation{
+#currentOperation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+  }
+  
+#buttonsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+  }
+  
+  #buttonsContainer button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: rgb(57, 55, 55);
+    cursor: pointer;
+  }
+
+/* #previousOperation{
     color: #777;
     padding: .2em;
     /* Overflow-wrap já deixa um espeço previsto para o texto, não deixa vazar para fora */
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word;
     min-height: 1.6em;
 }
 
@@ -51,8 +74,8 @@ body {
 
 #buttonsContainer {
     display: inline-block;
-}
-
+} */ 
+/* 
 #buttonsContainer button {
     background-color: rgb(57, 55, 55);
     color: white;
@@ -62,7 +85,7 @@ body {
     padding: 0.5em;
     cursor: pointer;
     border: .5px solid rgba(0, 0, 0, 0.283);
-}
+} */
 
 #buttonsContainer button:hover {
     background-color: rgb(74, 69, 69) !important;   
@@ -77,7 +100,17 @@ button.btnNumber {
     background-color: rgb(57, 55, 55) !important;  
 }
 
-button#btnIgual {
+/* button#btnIgual {
     width: 188px;
     background-color: rgba(171, 168, 167, 0.603);
-}
+} */
+
+#buttonsContainer #btnIgual {
+    grid-column: span 2;
+    background-color: #75a5cb;
+  }
+  
+  #buttonsContainer #btnIgual:hover {
+    grid-column: span 2;
+    background-color: #3a91d8;
+  }
